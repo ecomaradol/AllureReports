@@ -32,6 +32,7 @@ public class SelenideWithListenerTest {
         $(".header-search-input").sendKeys("eroshenkoam/allure-example");
         $(".header-search-input").submit();
 
+
         $(By.linkText("eroshenkoam/allure-example")).click();
         $(By.partialLinkText("Issues")).click();
         $(withText("#7")).should(Condition.visible);
