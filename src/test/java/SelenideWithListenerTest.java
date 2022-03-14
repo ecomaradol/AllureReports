@@ -36,5 +36,4 @@ public class SelenideWithListenerTest {
         $(By.partialLinkText("Issues")).click();
         $(withText("#7")).should(Condition.visible);
     }
-
 }
