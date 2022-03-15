@@ -28,13 +28,14 @@ public class SelenideWithListenerTest {
 
         open("https://github.com");
 
+
         $(".header-search-input").click();
         $(".header-search-input").sendKeys("eroshenkoam/allure-example");
         $(".header-search-input").submit();
+
 
         $(By.linkText("eroshenkoam/allure-example")).click();
         $(By.partialLinkText("Issues")).click();
         $(withText("#7")).should(Condition.visible);
     }
-
 }
